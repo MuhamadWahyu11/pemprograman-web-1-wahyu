@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Transaksi</title>
+    <link rel="stylesheet" href="transaction.css">
+    <script src="transaction.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#kebudayaan">Kebudayaan</a></li>
+                <li><a href="index.html#tempat_wisata">Tempat Wisata</a></li>
+                <li><a href="index.html#hotel">Hotel</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="transaction">
+            <h1>Formulir Pemesanan Hotel</h1>
+            <form id="transaction-form">
+                <label for="name">Nama Lengkap:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Nomor Telepon:</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="hotel">Pilih Hotel:</label>
+                <select id="hotel" name="hotel" required>
+                    <option value="The Ritz-Carlton, Bali">The Ritz-Carlton, Bali</option>
+                    <option value="Amanjiwo, Magelang">Amanjiwo, Magelang</option>
+                    <option value="Hotel Mulia, Jakarta">Hotel Mulia, Jakarta</option>
+                    <option value="Four Seasons Resort, Bali">Four Seasons Resort, Bali</option>
+                    <option value="Hyatt Regency, Yogyakarta">Hyatt Regency, Yogyakarta</option>
+                </select>
+
+                <label for="checkin">Tanggal Check-in:</label>
+                <input type="date" id="checkin" name="checkin" required>
+
+                <label for="checkout">Tanggal Check-out:</label>
+                <input type="date" id="checkout" name="checkout" required>
+
+                <label for="payment">Metode Pembayaran:</label>
+                <select id="payment" name="payment" required>
+                    <option value="credit_card">Kartu Kredit</option>
+                    <option value="bank_transfer">Transfer Bank</option>
+                    <option value="paypal">PayPal</option>
+                </select>
+
+                <button type="submit">Lanjutkan Pembayaran</button>
+            </form>
+            <div id="success-message" class="hidden">Transaksi berhasil! Terima kasih telah melakukan pemesanan.</div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Indonesian Tourism. All rights reserved. Designed with care to provide the best information for your travel needs across the beautiful archipelago of Indonesia.</p>
+    </footer>
+</body>
+</html>
